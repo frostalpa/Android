@@ -9,6 +9,7 @@
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
     android:paddingTop="10dp"
+    android:background="@drawable/bc"
     tools:context=".MainActivity">
 
     <Button
@@ -19,7 +20,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="18dp"
-        android:layout_width="80dp"/>
+        android:layout_width="80dp"
+        android:background="@drawable/btn_gd"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,13 +46,15 @@
         android:hint="Masukkan angka kedua"
         android:textSize="14sp"/>
     <TextView
-        android:text="Masukkan dua angka"
+        android:text="MASUKKAN DUA ANGKA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textview5"
+        android:textColor="#000000"
         android:textAlignment="center"
         android:textStyle="normal|bold"
         android:textSize="24sp"
+
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"/>
@@ -62,6 +66,7 @@
         android:layout_below="@+id/textview1"
         android:layout_centerHorizontal="true"
         android:textSize="36sp"
+        android:textColor="#000000"
         android:textAlignment="center"/>
     <TextView
         android:text="Hasil"
@@ -70,26 +75,30 @@
         android:id="@id/textview1"
         android:textAlignment="center"
         android:textStyle="normal|bold"
+        android:textColor="#000000"
         android:textSize="24sp"
         android:layout_marginTop="35sp"
         android:layout_below="@+id/bersihkan"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
     <Button
-        android:text="."
+        android:text="--"
         android:layout_height="wrap_content"
         android:id="@+id/kurang"
         android:layout_width="80dp"
         android:layout_alignBaseline="@+id/tambah"
         android:layout_alignBottom="@+id/tambah"
         android:layout_toRightOf="@+id/tambah"
-        android:layout_toEndOf="@+id/tambah"/>
+        android:layout_toEndOf="@+id/tambah"
+        android:background="@drawable/btn_gd"/>
     <Button
         android:text="Bersihkan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bersihkan"
         android:layout_below="@+id/tambah"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_bersih"
         android:layout_centerHorizontal="true" />
     <Button
         android:text="/"
@@ -98,7 +107,8 @@
         android:layout_width="80dp"
         android:layout_above="@+id/bersihkan"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/btn_gd"/>
     <Button
         android:text="x"
         android:layout_height="wrap_content"
@@ -107,6 +117,7 @@
         android:layout_alignBaseline="@+id/bagi"
         android:layout_alignBottom="@+id/bagi"
         android:layout_toLeftOf="@+id/bagi"
-        android:layout_toStartOf="@+id/bagi"/>
+        android:layout_toStartOf="@+id/bagi"
+        android:background="@drawable/btn_gd"/>
 </RelativeLayout>
 
